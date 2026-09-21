@@ -939,6 +939,20 @@ if (introMusicStatus) {
   }, { once: true });
 });
 
+// Intro photo items playful click feedback
+document.querySelectorAll('.intro-photo-item').forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const rect = item.getBoundingClientRect();
+    const originX = rect.left + rect.width / 2;
+    const originY = rect.top + rect.height / 2;
+    for (let i = 0; i < 4; i++) {
+      createFlyingHeart(originX, originY);
+    }
+    audioEngine.playChimeChord();
+  });
+});
+
 // Auto show intro popup immediately on load
 if (document.readyState === 'loading') {
   window.addEventListener('DOMContentLoaded', openIntroWishModal);

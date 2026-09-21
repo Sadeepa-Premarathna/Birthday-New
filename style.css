@@ -2313,6 +2313,97 @@ body.dark-theme {
   text-shadow: 0 0 20px rgba(255, 0, 127, 0.7);
 }
 
+/* Intro Romantic Photo Polaroid Strip */
+.intro-photos-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 12px 0 16px;
+  width: 100%;
+  padding: 10px 4px 14px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 0, 127, 0.4) transparent;
+}
+
+.intro-photos-row::-webkit-scrollbar {
+  height: 4px;
+}
+.intro-photos-row::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 127, 0.4);
+  border-radius: 10px;
+}
+
+.intro-photo-item {
+  position: relative;
+  flex: 0 0 110px;
+  background: linear-gradient(155deg, #ffffff 0%, #fff8fb 100%);
+  padding: 6px 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 0, 127, 0.25);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  user-select: none;
+}
+
+.intro-photo-item:hover {
+  transform: scale(1.12) rotate(0deg) !important;
+  z-index: 10;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.75), 0 0 22px rgba(255, 105, 180, 0.65);
+}
+
+.intro-photo-item.t-left { transform: rotate(-4deg); }
+.intro-photo-item.t-center { transform: rotate(1deg) scale(1.05); z-index: 2; border: 1.5px solid rgba(255, 0, 127, 0.35); }
+.intro-photo-item.t-right { transform: rotate(4deg); }
+.intro-photo-item.t-extra { transform: rotate(-3deg); }
+
+.intro-photo-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #110219;
+}
+
+.intro-photo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.intro-photo-item:hover .intro-photo-thumb img {
+  transform: scale(1.08);
+}
+
+.intro-photo-caption {
+  display: block;
+  font-family: 'Caveat', cursive;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2b0b24;
+  text-align: center;
+  margin-top: 6px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.intro-tape {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 44px;
+  height: 14px;
+  background: rgba(255, 182, 193, 0.78);
+  backdrop-filter: blur(2px);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
 .intro-card-body {
   font-size: 0.94rem;
   color: #eed6e6;
@@ -2380,6 +2471,18 @@ body.dark-theme {
   }
   .intro-wish-title {
     font-size: 2.1rem;
+  }
+  .intro-photos-row {
+    gap: 10px;
+    margin: 8px 0 12px;
+    padding: 6px 2px 10px;
+  }
+  .intro-photo-item {
+    flex: 0 0 92px;
+    padding: 5px 5px 9px;
+  }
+  .intro-photo-caption {
+    font-size: 0.78rem;
   }
   .intro-sinhala-letter-box {
     max-height: 170px;
