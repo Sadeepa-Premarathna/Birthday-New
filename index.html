@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday Sudu Baba 💖 | For My Special One</title>
+  <meta name="description"
+    content="A romantic, luxury birthday celebration website crafted with all my heart for my special one, Susu Baba.">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+
+  <!-- Google Fonts: Great Vibes, Poppins, Outfit, Dancing Script, Caveat, Playfair Display, Noto Sans Sinhala -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+  <!-- Ambient Starfield Canvas -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- Confetti & Fireworks Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="heart-pulse">💖</span>
+        <span class="logo-text">For My Special One</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#story" class="nav-link">Our Story</a></li>
+        <li><a href="#memories" class="nav-link">Memories</a></li>
+        <li><a href="#messages" class="nav-link">Messages</a></li>
+        <li><a href="#special-day" class="nav-link">A Special Day</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#surprise" class="nav-link">Surprise</a></li>
+      </ul>
+
+      <!-- Music Pill Controller -->
+      <div class="music-pill" id="musicToggle" title="Click to Play / Pause Music">
+        <div class="sound-wave paused" id="soundWave">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="music-pill-label" id="musicLabel">Play Our Song 🎵</span>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Background Music Audio Element Fallback -->
+  <audio id="bgAudio" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+    <source src="assets/birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ================= 01 - HOME PAGE ================= -->
+  <section class="section home-section" id="home">
+    <div class="section-wrapper home-container">
+
+      <!-- Home Left Text Content -->
+      <div class="home-text-col">
+        <div class="badge-tag animate-fade-in">
+          <span>✨ Happy Birthday Sudu Baba ✨</span>
+        </div>
+
+        <h1 class="hero-main-title">
+          <span class="cursive-hbd glow-text">Happy Birthday</span>
+          <span class="sub-hbd">to My Favorite Person!</span>
+        </h1>
+
+        <p class="hero-subtext">
+          On your special day, I just want you to know how incredibly special you are to me. You make every moment
+          brighter! ♡
+        </p>
+
+        <!-- Action CTA Buttons -->
+        <div class="hero-cta-buttons">
+          <button type="button" class="btn-primary-pill" id="openSurpriseBtn">
+            <span class="btn-icon">🎁</span>
+            <span>Open Your Surprise</span>
+            <span class="arrow-icon">➔</span>
+          </button>
+          <a href="#story" class="btn-secondary-pill">
+            <span>Scroll Down</span>
+            <span class="arrow-down">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Home Right Hero Image Showcase -->
+      <div class="home-image-col">
+        <div class="hero-image-card">
+          <div class="hero-photo-frame">
+            <img src="assets/images/hero_home_main.jpg" alt="Happy Birthday Susu Baba with me" class="hero-img">
+            <div class="frame-glow-overlay"></div>
+          </div>
+
+          <!-- Pinned Note: "Same Girl... A Million Reasons to Smile ♡" -->
+          <div class="taped-note-card">
+            <div class="tape-strip"></div>
+            <p class="taped-note-text">
+              Same Girl...<br>
+              A Million Reasons<br>
+              to Smile ♡
+            </p>
+          </div>
+
+          <!-- Handwritten Script Doodle -->
+          <div class="script-doodle">
+            <span>You Make Life More Beautiful ♡</span>
+          </div>
+
+          <!-- Decorative Floating Emojis -->
+          <div class="float-emoji e1">💖</div>
+          <div class="float-emoji e2">✨</div>
+          <div class="float-emoji e3">👑</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Home Bottom 4 Feature Cards -->
+    <div class="section-wrapper feature-cards-row">
+      <div class="feature-card">
+        <div class="feature-icon pink">💖</div>
+        <div class="feature-info">
+          <h4>Your Smile</h4>
+          <p>Brighter Days</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon gold">⭐</div>
+        <div class="feature-info">
+          <h4>Your Kindness</h4>
+          <p>A Better World</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon rose">🎁</div>
+        <div class="feature-info">
+          <h4>Your Love</h4>
+          <p>My Greatest Gift</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon cyan">📷</div>
+        <div class="feature-info">
+          <h4>Our Memories</h4>
+          <p>Priceless</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 - OUR STORY PAGE ================= -->
+  <section class="section story-section" id="story">
+    <div class="section-wrapper">
+
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <h2 class="cursive-section-title">Our Story <span class="heart-symbol">♡</span></h2>
+        <p class="story-tagline">"Every love story is beautiful, but ours is my favourite ♡"</p>
+        <p class="story-sub">Two hearts, one journey and a thousand beautiful moments...</p>
+      </div>
+
+      <!-- Top Romantic Banner Spotlight -->
+      <div class="story-hero-banner">
+        <img src="assets/images/photo3_fireworks_night.jpg" alt="Under the fireworks night" class="banner-bg">
+        <div class="banner-overlay">
+          <span class="banner-badge">🎆 Together Under The Stars</span>
+          <p class="banner-quote">"In your arms, every quiet second feels like a lifetime of peace."</p>
+        </div>
+      </div>
+
+      <!-- Vertical Love Timeline -->
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Milestone 1: The Beginning -->
+        <div class="timeline-item left">
+          <div class="timeline-node">💖</div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets/images/photo10_the_beginning.jpg" alt="The Beginning">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Chapter 01</span>
+              <h3>The Beginning</h3>
+              <p>We met, and somehow everything started to feel different. An innocent smile that became the center of
+                my world. ♡</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2: Growing Together -->
+        <div class="timeline-item right">
+          <div class="timeline-node">🌸</div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets/images/photo9_couple_sun.jpg" alt="Growing Together">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Chapter 02</span>
+              <h3>Growing Together</h3>
+              <p>Every moment with you teaches me something new about love, life and true happiness. Every step is
+                easier with you beside me. ♡</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3: Stronger Each Day -->
+        <div class="timeline-item left">
+          <div class="timeline-node">✨</div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets/images/photo4_us_together.jpg" alt="Stronger Each Day">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Chapter 03</span>
+              <h3>Stronger Each Day</h3>
+              <p>Through all the ups and downs, laughter and challenges, we choose each other, again and again, with all
+                our hearts. ♡</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 4: A Beautiful Future -->
+        <div class="timeline-item right">
+          <div class="timeline-node">👑</div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets/images/photo5_peaceful_moments.jpg" alt="A Beautiful Future">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Chapter 04</span>
+              <h3>A Beautiful Future</h3>
+              <p>And I can't wait for all the unwritten chapters we are yet to write together, hand in hand, forever and
+                always. ♡</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Thank You -->
+      <div class="story-footer-note">
+        <p class="cursive-sub">Thank you for being you ♡</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 03 - MEMORIES DREAM BOARD ================= -->
+  <section class="section memories-section" id="memories">
+    <div class="section-wrapper">
+
+      <!-- Section Header with Fairy Lights Aesthetic -->
+      <div class="dream-board-header">
+        <div class="fairy-lights-string">
+          <span class="light l1">✨</span>
+          <span class="bulb b1">💡</span>
+          <span class="light l2">💖</span>
+          <span class="bulb b2">💡</span>
+          <span class="light l3">✨</span>
+          <span class="bulb b3">💡</span>
+          <span class="light l4">🌟</span>
+          <span class="bulb b4">💡</span>
+          <span class="light l5">✨</span>
+        </div>
+
+        <div class="memories-header-row">
+          <div class="memories-title-col">
+            <span class="badge-tag">📌 Our Love Vision & Dream Board</span>
+            <h2 class="cursive-section-title">Memories & Dream Board <span class="heart-symbol">♡</span></h2>
+            <p class="section-subtext">Every pinned moment, every sweet smile, and our endless love story captured
+              forever...</p>
+          </div>
+
+          <div class="tilted-polaroid-badge">
+            <div class="polaroid-pin">📌</div>
+            <img src="assets/images/photo4_us_together.jpg" alt="Susu Baba and me" class="badge-mini-thumb">
+            <span class="polaroid-text">Good People Brighter Days ♡</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-pills-row" id="memoriesFilterRow">
+        <button class="filter-pill active" data-filter="all">All Memories (30+)</button>
+        <button class="filter-pill" data-filter="us">Us Together ♡</button>
+        <button class="filter-pill" data-filter="her">Her Sweetest Snaps 🌸</button>
+        <button class="filter-pill" data-filter="dates">Dates & Travel ✈️</button>
+        <button class="filter-pill" data-filter="cute">Cute Moments 💖</button>
+      </div>
+
+      <!-- THE ROMANTIC DREAM BOARD -->
+      <div class="dream-board-container" id="memoriesGrid">
+
+        <!-- Sticky Memo 1 -->
+        <div class="dream-sticky-note note-pink tilt-p1" data-category="us dates cute">
+          <div class="sticky-tape"></div>
+          <div class="sticky-pin">📌</div>
+          <h4>Our Forever Promise ♡</h4>
+          <p>"To make you laugh every single day, protect your gentle heart, and love you endlessly."</p>
+          <span class="sticky-sign">Forever Yours, Premarathna ❤️</span>
+        </div>
+
+        <!-- Photo 1 (memory_01) -->
+        <div class="dream-polaroid-card tilt-left-1" data-category="her cute" data-img="assets/images/memory_01.jpg"
+          data-caption="You are my favorite thought every morning and my sweetest dream every night ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">🌸</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_01.jpg" alt="Memory with Susu Baba" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"You are my favorite thought every morning ♡"</p>
+            <span class="love-sub">Pure Happiness ✨</span>
+          </div>
+        </div>
+
+        <!-- Photo 2 (photo10_the_beginning) -->
+        <div class="dream-polaroid-card tilt-right-2" data-category="us dates"
+          data-img="assets/images/photo10_the_beginning.jpg"
+          data-caption="Where our beautiful journey started across the table with flowers and shy smiles ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">💖</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/photo10_the_beginning.jpg" alt="The Beginning" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Where our story first began... The Beginning ♡"</p>
+            <span class="love-sub">First Spark ☕</span>
+          </div>
+        </div>
+
+        <!-- Photo 3 (memory_02) -->
+        <div class="dream-polaroid-card tilt-left-2" data-category="her cute" data-img="assets/images/memory_02.jpg"
+          data-caption="My heart feels the safest whenever you are right here beside me ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">🎀</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_02.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"My heart feels safest whenever you're around ✨"</p>
+            <span class="love-sub">My Safe Haven 🌿</span>
+          </div>
+        </div>
+
+        <!-- Photo 4 (photo6_couple_playful) -->
+        <div class="dream-polaroid-card tilt-right-1 featured-dream" data-category="us cute"
+          data-img="assets/images/photo6_couple_playful.jpg"
+          data-caption="Same girl... a million reasons to smile! Our goofy playful moments together ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">👑</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/photo6_couple_playful.jpg" alt="Playful Selfie" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Same Girl... A Million Reasons to Smile ♡"</p>
+            <span class="love-sub">My Favorite Person 🌟</span>
+          </div>
+        </div>
+
+        <!-- Photo 5 (memory_03) -->
+        <div class="dream-polaroid-card tilt-left-3" data-category="her cute" data-img="assets/images/memory_03.jpg"
+          data-caption="That sweet smile that can brighten up even the stormiest day ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">🌸</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_03.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Sweetest smile that brightens up my universe 🌸"</p>
+            <span class="love-sub">Endless Smiles 💖</span>
+          </div>
+        </div>
+
+        <!-- Photo 6 (memory_04) -->
+        <div class="dream-polaroid-card tilt-right-3" data-category="us dates" data-img="assets/images/memory_04.jpg"
+          data-caption="Falling in love with you all over again, every single day we spend together ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">⭐</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_04.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Falling in love with you more, every single day 💖"</p>
+            <span class="love-sub">Always & Forever 🌹</span>
+          </div>
+        </div>
+
+        <!-- Sticky Memo 2 -->
+        <div class="dream-sticky-note note-gold tilt-p2" data-category="us cute">
+          <div class="sticky-tape"></div>
+          <div class="sticky-pin">⭐</div>
+          <h4>Dream Board Goal ✈️</h4>
+          <p>"To travel to all the dreamy places under the stars, hand in hand with Susu Baba."</p>
+          <span class="sticky-sign">Our Future Chapters 💫</span>
+        </div>
+
+        <!-- Photo 7 (memory_05) -->
+        <div class="dream-polaroid-card tilt-left-1" data-category="her cute" data-img="assets/images/memory_05.jpg"
+          data-caption="Two souls, one beautiful heartbeat intertwined in love ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">💖</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_05.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Two souls, one beautiful heartbeat ♡"</p>
+            <span class="love-sub">Soulmates 🕊️</span>
+          </div>
+        </div>
+
+        <!-- Photo 8 (memory_06) -->
+        <div class="dream-polaroid-card tilt-right-2" data-category="us dates" data-img="assets/images/memory_06.jpg"
+          data-caption="Holding your hand feels like finding peace in the middle of a chaotic world ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">🌿</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_06.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Holding your hand is my favorite feeling in the world 🌿"</p>
+            <span class="love-sub">Hand in Hand 🤝</span>
+          </div>
+        </div>
+
+        <!-- Photo 9 (memory_07) -->
+        <div class="dream-polaroid-card tilt-left-2" data-category="her cute" data-img="assets/images/memory_07.jpg"
+          data-caption="You make every ordinary moment feel like a fairy tale magic ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">✨</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_07.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"You make every moment feel magical 💫"</p>
+            <span class="love-sub">Fairy Tale Love 🧚</span>
+          </div>
+        </div>
+
+        <!-- Photo 10 (memory_08) -->
+        <div class="dream-polaroid-card tilt-right-1" data-category="us cute" data-img="assets/images/memory_08.jpg"
+          data-caption="Forever enchanted by your cute laughter and warmth ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">🌸</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_08.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Forever enchanted by your cute laughter 🌷"</p>
+            <span class="love-sub">Sweet Melodies 🎶</span>
+          </div>
+        </div>
+
+        <!-- Photo 11 (memory_09) -->
+        <div class="dream-polaroid-card tilt-left-3" data-category="her dates" data-img="assets/images/memory_09.jpg"
+          data-caption="My sunshine on the darkest of days, lighting up every path ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">☀️</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_09.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"My sunshine on the darkest of days ☀️"</p>
+            <span class="love-sub">Warm Rays 🌻</span>
+          </div>
+        </div>
+
+        <!-- Photo 12 (memory_10) -->
+        <div class="dream-polaroid-card tilt-right-3" data-category="us dates" data-img="assets/images/memory_10.jpg"
+          data-caption="Together is our absolute favorite place to be in the whole universe ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">👩‍❤️‍👨</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_10.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Together is our favorite place to be 👩‍❤️‍👨"</p>
+            <span class="love-sub">Home is with You 🏡</span>
+          </div>
+        </div>
+
+        <!-- Photo 13 (memory_11) -->
+        <div class="dream-polaroid-card tilt-left-1" data-category="her cute" data-img="assets/images/memory_11.jpg"
+          data-caption="You are the reason behind my happiest smiles and peaceful nights ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">💖</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_11.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"You are the reason behind my happiest smiles ♡"</p>
+            <span class="love-sub">Heartfelt Joy 😊</span>
+          </div>
+        </div>
+
+        <!-- Photo 14 (memory_12) -->
+        <div class="dream-polaroid-card tilt-right-2" data-category="us dates" data-img="assets/images/memory_12.jpg"
+          data-caption="A million little memories, but each one feels like pure gold with you ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">💌</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_12.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"A million little memories, one timeless love 💌"</p>
+            <span class="love-sub">Golden Moments 🪙</span>
+          </div>
+        </div>
+
+        <!-- Photo 15 (memory_13) -->
+        <div class="dream-polaroid-card tilt-left-2" data-category="her cute" data-img="assets/images/memory_13.jpg"
+          data-caption="In a sea of people, my eyes will always search for you and find you ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">🌊</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_13.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"In a sea of people, my eyes always find you 🌊"</p>
+            <span class="love-sub">Only You 👁️</span>
+          </div>
+        </div>
+
+        <!-- Photo 16 (memory_14) -->
+        <div class="dream-polaroid-card tilt-right-1" data-category="us dates" data-img="assets/images/memory_14.jpg"
+          data-caption="Endless hugs, warm talks and infinite love with my sweet Susu Baba ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">👑</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_14.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Endless hugs and infinite love with Susu Baba 👑"</p>
+            <span class="love-sub">Queen of My Heart 👸</span>
+          </div>
+        </div>
+
+        <!-- Photo 17 (memory_15) -->
+        <div class="dream-polaroid-card tilt-left-3" data-category="her cute" data-img="assets/images/memory_15.jpg"
+          data-caption="Every love story is special, but ours is paradise in every chapter ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">🌹</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_15.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Every love story is special, but ours is paradise ♡"</p>
+            <span class="love-sub">True Paradise 🏝️</span>
+          </div>
+        </div>
+
+        <!-- Photo 18 (memory_16) -->
+        <div class="dream-polaroid-card tilt-right-3" data-category="us dates" data-img="assets/images/memory_16.jpg"
+          data-caption="Blessed with the purest heart, sweetest soul, and most beautiful girl in the world ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">🕊️</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_16.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Blessed with the purest heart in the world 🌹"</p>
+            <span class="love-sub">Precious Soul 💎</span>
+          </div>
+        </div>
+
+        <!-- Photo 19 (memory_17) -->
+        <div class="dream-polaroid-card tilt-left-1" data-category="her cute" data-img="assets/images/memory_17.jpg"
+          data-caption="You and me against the whole wide world, forever standing strong together ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">🌍</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_17.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"You and me against the whole wide world 🌍"</p>
+            <span class="love-sub">Unbreakable Bond 🛡️</span>
+          </div>
+        </div>
+
+        <!-- Photo 20 (memory_18) -->
+        <div class="dream-polaroid-card tilt-right-2" data-category="us dates" data-img="assets/images/memory_18.jpg"
+          data-caption="Your love is the greatest gift of my life, one I cherish every second ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">🎁</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_18.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Your love is the greatest gift of my life 🎁"</p>
+            <span class="love-sub">Greatest Treasure 💍</span>
+          </div>
+        </div>
+
+        <!-- Photo 21 (memory_19) -->
+        <div class="dream-polaroid-card tilt-left-2" data-category="her cute" data-img="assets/images/memory_19.jpg"
+          data-caption="Forever my girl, forever my best friend, and forever my soulmate ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">🤍</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_19.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Forever my girl, forever my best friend 🤍"</p>
+            <span class="love-sub">Best Friends in Love 👫</span>
+          </div>
+        </div>
+
+        <!-- Photo 22 (memory_20) -->
+        <div class="dream-polaroid-card tilt-right-1" data-category="us dates" data-img="assets/images/memory_20.jpg"
+          data-caption="Life is so much sweeter and richer with you walking beside me ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">🍓</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_20.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Life is so much sweeter with you in it 🍓"</p>
+            <span class="love-sub">Sweet Life 🍭</span>
+          </div>
+        </div>
+
+        <!-- Photo 23 (memory_21) -->
+        <div class="dream-polaroid-card tilt-left-3" data-category="her cute" data-img="assets/images/memory_21.jpg"
+          data-caption="Every single glance from you still gives me sweet butterflies ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">🦋</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_21.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Every glance from you still gives me butterflies 🦋"</p>
+            <span class="love-sub">Butterflies Forever 💓</span>
+          </div>
+        </div>
+
+        <!-- Photo 24 (memory_22) -->
+        <div class="dream-polaroid-card tilt-right-3" data-category="us dates" data-img="assets/images/memory_22.jpg"
+          data-caption="Our crazy, lovely, unforgettable adventures that I keep in my heart forever ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">✨</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_22.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Our crazy, lovely, unforgettable memories together ✨"</p>
+            <span class="love-sub">Wild Adventures 🚀</span>
+          </div>
+        </div>
+
+        <!-- Photo 25 (memory_23) -->
+        <div class="dream-polaroid-card tilt-left-1" data-category="her cute" data-img="assets/images/memory_23.jpg"
+          data-caption="Thank you for being my anchor in every storm and my joy in every triumph ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">⚓</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_23.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Thank you for being my anchor and my joy ♡"</p>
+            <span class="love-sub">My Everything 🌟</span>
+          </div>
+        </div>
+
+        <!-- Photo 26 (memory_24) -->
+        <div class="dream-polaroid-card tilt-right-2" data-category="us dates" data-img="assets/images/memory_24.jpg"
+          data-caption="Just you and me, writing our forever story one magical page at a time ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">📖</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_24.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Just you and me, writing our forever story 📖"</p>
+            <span class="love-sub">The Love Story 🖋️</span>
+          </div>
+        </div>
+
+        <!-- Photo 27 (memory_25) -->
+        <div class="dream-polaroid-card tilt-left-2" data-category="her cute" data-img="assets/images/memory_25.jpg"
+          data-caption="You are my today, my tomorrow, and all of my days to come ♡">
+          <div class="washi-tape tape-right"></div>
+          <div class="polaroid-pin-icon">🌟</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_25.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"You are my today and all of my tomorrows 🌟"</p>
+            <span class="love-sub">Timeless Bond ⏳</span>
+          </div>
+        </div>
+
+        <!-- Photo 28 (memory_26) -->
+        <div class="dream-polaroid-card tilt-right-1" data-category="us dates cute"
+          data-img="assets/images/memory_26.jpg"
+          data-caption="Every second with you is a blessing I will protect forever Susu Baba ♡">
+          <div class="washi-tape tape-top"></div>
+          <div class="polaroid-pin-icon">👑</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/memory_26.jpg" alt="Memory" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Every second with you is a blessing Susu Baba 👑"</p>
+            <span class="love-sub">My Forever Queen 💖</span>
+          </div>
+        </div>
+
+        <!-- Photo 29 (photo3_fireworks_night) -->
+        <div class="dream-polaroid-card tilt-left-3" data-category="us dates"
+          data-img="assets/images/photo3_fireworks_night.jpg"
+          data-caption="Under the fireworks, watching the stars together with the love of my life ♡">
+          <div class="washi-tape tape-left"></div>
+          <div class="polaroid-pin-icon">🎆</div>
+          <div class="dream-img-frame">
+            <img src="assets/images/photo3_fireworks_night.jpg" alt="Fireworks Night" loading="lazy">
+          </div>
+          <div class="dream-card-caption">
+            <p class="love-word">"Underneath the fireworks, forever with you 🎆"</p>
+            <span class="love-sub">Starry Nights 🌌</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Memories Bottom Quote -->
+      <div class="section-footer-quote">
+        <p>"These are not just photos... They are pieces of our happiness pinned forever on our dream board ♡"</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 04 - MESSAGES PAGE ================= -->
+  <section class="section messages-section" id="messages">
+    <div class="section-wrapper">
+
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <h2 class="cursive-section-title">Messages For You <span class="heart-symbol">♡</span></h2>
+        <p class="section-subtext">Little words, big feelings...</p>
+      </div>
+
+      <div class="messages-container-row">
+
+        <!-- Left: 4 Stacked Message Cards -->
+        <div class="message-cards-col">
+
+          <div class="msg-card">
+            <div class="msg-icon pink">💖</div>
+            <div class="msg-body">
+              <h4>You Make Life Better</h4>
+              <p>Just a reminder that you are amazing, loved and truly special. Having you by my side turns ordinary
+                days into magic. ♡</p>
+            </div>
+          </div>
+
+          <div class="msg-card">
+            <div class="msg-icon gold">💌</div>
+            <div class="msg-body">
+              <h4>Thank You</h4>
+              <p>Thank you for always being there, for your understanding, your sweet hugs, and for loving me just as I
+                am. ♡</p>
+            </div>
+          </div>
+
+          <div class="msg-card">
+            <div class="msg-icon rose">✨</div>
+            <div class="msg-body">
+              <h4>Keep Shining</h4>
+              <p>May your days ahead be filled with overflowing laughter, success in all your goals, and everything your
+                gentle heart deserves. ♡</p>
+            </div>
+          </div>
+
+          <div class="msg-card">
+            <div class="msg-icon cyan">🌟</div>
+            <div class="msg-body">
+              <h4>Always Remember</h4>
+              <p>No matter what tomorrow brings, I'm always here cheering for you, protecting you, loving you, and
+                believing in you. ♡</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Pinned Photo Frame with Quote -->
+        <div class="message-photo-col">
+          <div class="taped-portrait-card">
+            <div class="tape-strip top-center"></div>
+            <div class="floral-pin">🌸</div>
+
+            <div class="portrait-photo-box">
+              <img src="assets/images/photo7_susu_portrait.jpg" alt="My Dearest Susu Baba">
+            </div>
+
+            <div class="portrait-card-footer">
+              <p class="romantic-script-quote">
+                "In a world full of people,<br>I'm so lucky I found you. ♡"
+              </p>
+              <span class="sinhala-soft-note">හැමදාමත් මගේ ආදරණීය සුසු බබා... 💖</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 05 - A SPECIAL DAY PAGE ================= -->
+  <section class="section special-day-section" id="special-day">
+    <div class="section-wrapper">
+
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <h2 class="cursive-section-title">A Special Day <span class="heart-symbol">♡</span></h2>
+        <p class="section-subtext">Celebrating the most wonderful person in my life!</p>
+      </div>
+
+      <div class="special-day-grid">
+
+        <!-- Left Column: Interactive Birthday Cake -->
+        <div class="cake-column">
+          <div class="cake-box-card">
+            <h3 class="cursive-card-title">Make a Wish ♡</h3>
+
+            <!-- 3D Interactive Cake -->
+            <div class="cake-interactive-stage" id="cakeContainer" title="Click to blow out candle!">
+              <div class="candle">
+                <div class="flame" id="candleFlame"></div>
+                <div class="smoke hidden" id="candleSmoke"></div>
+              </div>
+              <div class="cake-tier-top">
+                <div class="berry b1">🍓</div>
+                <div class="berry b2">🍓</div>
+                <div class="berry b3">🍓</div>
+                <div class="frosting-icing"></div>
+              </div>
+              <div class="cake-tier-mid">
+                <div class="tier-frosting"></div>
+              </div>
+              <div class="cake-tier-base"></div>
+              <div class="cake-dish"></div>
+            </div>
+
+            <!-- Cake Wish Instruction -->
+            <div class="cake-prompt-badge" id="cakePrompt">
+              <span class="sparkle-star">✨</span>
+              <span id="cakeInstruction">Tap candle to blow it out & make a wish! 🕯️</span>
+              <span class="sparkle-star">✨</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Column: Rose Gold Birthday Wish Card -->
+        <div class="wish-card-column">
+          <div class="grand-birthday-card">
+            <div class="wax-seal">👑</div>
+            <span class="card-badge-pill">🎂 Today is Susu Baba's Day 🎂</span>
+
+            <h3 class="grand-card-title">Happy Birthday My Love!</h3>
+
+            <p class="grand-card-body">
+              Today is a celebration of you! A day to remind you how special, kind, beautiful and amazing you are to me.
+            </p>
+            <p class="grand-card-body">
+              May this year bring you more happiness, more love, more success and everything your gentle heart desires.
+              You deserve all the good things in the world! ♡
+            </p>
+
+            <p class="sinhala-card-paragraph">
+              මගේ චූටි බූටි ආදරී 💕<br>
+              <br>
+              ඔයා දැන් ලොකු බබෙක්🥺 අවුරුදු 24 ක් දැන් ඔයාට අඩ්ඩෙ 🤩 ඉතින් දැන් මම ඔයා එක්ක ගොඩක් කල් අපි එකට සමරන
+              පලවෙනි birthday එක මේක නිකන් දවසක් නෙවෙයි මගේ කුමාරිකාව මේ ලෝකෙට ආව දවස තමා අද ❤️‍🔥
+              <br>
+              <br>
+              අවුරුදු ගාණක් ඉදන් මගේ ලග ඉන්න ඔයා මාව වැඩියෙන්ම තේරුන් ගත්ත කෙනා ඔයා ඔයා මට ලෝකයක් කොච්චර මරගත්තත්
+              කියවගත්තත් ඒ හැමදේම පොඩි වෙලාවයි ඒ හැමදේම ආදරේ නිසා (මට ඇති ගෑනියෙක් නෑ යකෝ එහෙනම් මම ඔහොම මරාගන්නවද
+              යකෝ🥺) මගෙ එක්ක හැමදේටම ඉන්න මගේ ශක්ති පැකට් එක ඔයා කොච්චර මහන්සි වෙලා ආවත් ඔයා ගාවට ආවම හැමදේම හරි💎
+              <br>
+              <br>
+              මම දන්නෙ මෙච්චරයි මගේ ලෝකේ ඔයා. ඔයා වගේ කෙල්ලෙක් මේ ලෝකො කොහෙවත් නෑ ඔයා වගේ ආදරේ කරන්න මාව බලාගන්න කාටවත්
+              බෑ ඔයාට මම ගොඩම ගොඩාආආආක් ආදරෙයි මගේ පණ❤️💕
+              <br>
+              <br>
+              මැරෙනකන් අපි එකටම ඉමු ගහගෙන මරාගෙන හරි මගේ එක්කම ඉන්න ඔයා මගේ විතරයි ආදරෙයි ගොඩම ගොඩාආආක්❤️💕❤️‍🔥🫀
+            </p>
+
+            <button class="keep-smiling-btn" id="keepSmilingBtn">
+              <span>Keep Smiling 🥰</span>
+              <span class="smile-count" id="smileCount">0 💖</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Vertical Film Strip -->
+        <div class="filmstrip-column">
+          <div class="filmstrip-card">
+            <div class="filmstrip-holes-left"></div>
+            <div class="filmstrip-photos">
+              <div class="strip-frame">
+                <img src="assets/images/photo1_cute_smile.jpg" alt="Cute smile snapshot">
+              </div>
+              <div class="strip-frame">
+                <img src="assets/images/photo8_couple_table.jpg" alt="Cozy moment snapshot">
+              </div>
+              <div class="strip-frame">
+                <img src="assets/images/photo7_susu_portrait.jpg" alt="Lovely portrait snapshot">
+              </div>
+            </div>
+            <div class="filmstrip-holes-right"></div>
+          </div>
+
+          <div class="strip-caption-note">
+            <p>"Happy Birthday to the one who makes everything brighter ♡"</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 06 - GALLERY PAGE ================= -->
+  <section class="section gallery-section" id="gallery">
+    <div class="section-wrapper">
+
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <h2 class="cursive-section-title">Gallery <span class="heart-symbol">♡</span></h2>
+        <p class="section-subtext">Every captured memory tells our beautiful story...</p>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="filter-pills-row" id="galleryFilterRow">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="us">Us</button>
+        <button class="filter-pill" data-filter="her">Her</button>
+        <button class="filter-pill" data-filter="him">Him</button>
+        <button class="filter-pill" data-filter="travel">Travel</button>
+        <button class="filter-pill" data-filter="special">Special</button>
+      </div>
+
+      <!-- Gallery Masonry Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-tile" data-cat="us special" data-img="assets/images/photo6_couple_playful.jpg"
+          data-caption="Happy Birthday Susu Baba - Us being our silly, happy selves! ♡">
+          <img src="assets/images/photo6_couple_playful.jpg" alt="Playful Selfie" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">💖</span>
+            <p>Us ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="her special" data-img="assets/images/photo7_susu_portrait.jpg"
+          data-caption="Sweetest portrait of Susu Baba ♡">
+          <img src="assets/images/photo7_susu_portrait.jpg" alt="Susu Portrait" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">🌸</span>
+            <p>Her ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="us special" data-img="assets/images/photo10_the_beginning.jpg"
+          data-caption="The Beginning - Where our beautiful love story started ♡">
+          <img src="assets/images/photo10_the_beginning.jpg" alt="The Beginning" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">☕</span>
+            <p>The Beginning ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="us travel" data-img="assets/images/photo9_couple_sun.jpg"
+          data-caption="Sunshine and warm smiles with you ♡">
+          <img src="assets/images/photo9_couple_sun.jpg" alt="Sunny day with Susu" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">☀️</span>
+            <p>Sunny Days ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="her special" data-img="assets/images/photo1_cute_smile.jpg"
+          data-caption="The smile that brightens my whole world ♡">
+          <img src="assets/images/photo1_cute_smile.jpg" alt="Cute smile" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">✨</span>
+            <p>Her Smile ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="her travel" data-img="assets/images/photo2_pretty_walk.jpg"
+          data-caption="Every step with you feels like home ♡">
+          <img src="assets/images/photo2_pretty_walk.jpg" alt="Pretty walk outdoors" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">🌿</span>
+            <p>Graceful Steps ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="us special" data-img="assets/images/photo3_fireworks_night.jpg"
+          data-caption="Under the fireworks night with my favourite person ♡">
+          <img src="assets/images/photo3_fireworks_night.jpg" alt="Fireworks night" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">🎆</span>
+            <p>Fireworks ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="us" data-img="assets/images/photo4_us_together.jpg"
+          data-caption="Always smiling right beside you ♡">
+          <img src="assets/images/photo4_us_together.jpg" alt="Us smiling together" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">🥰</span>
+            <p>Together ♡</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" data-cat="us travel" data-img="assets/images/photo5_peaceful_moments.jpg"
+          data-caption="Peace, calm and endless love with you forever ♡">
+          <img src="assets/images/photo5_peaceful_moments.jpg" alt="Peaceful moments outdoors" loading="lazy">
+          <div class="tile-hover-overlay">
+            <span class="hover-icon">💫</span>
+            <p>Peace & Love ♡</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More Action -->
+      <div class="gallery-action-row">
+        <button class="load-more-btn" id="loadMoreBtn">
+          <span>✨ View All Moments & Memories ✨</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 07 - SURPRISE / MUSIC PAGE ================= -->
+  <section class="section surprise-section" id="surprise">
+    <div class="section-wrapper">
+
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <h2 class="cursive-section-title">A Little Surprise <span class="heart-symbol">♡</span></h2>
+        <p class="story-tagline">"Just For You"</p>
+        <p class="section-subtext">Press play and feel my heart...</p>
+      </div>
+
+      <!-- Grand Music Player Card -->
+      <div class="music-player-card">
+        <div class="player-backdrop">
+          <img src="assets/images/photo3_fireworks_night.jpg" alt="Sunset backdrop" class="player-bg-img">
+          <div class="player-dark-tint"></div>
+        </div>
+
+        <div class="player-interface">
+
+          <div class="player-header-info">
+            <span class="player-badge">🎵 Dedicated Song for Susu Baba</span>
+            <h3 class="track-title" id="trackTitle">මම පැතුවා නුඹ ළඟම</h3>
+            <p class="track-subtitle">Mama Pathuwe - Minura Halwathura ♡</p>
+          </div>
+
+          <!-- Big Play / Pause Circular Button -->
+          <div class="player-controls-row">
+            <button class="big-play-btn" id="bigPlayBtn" aria-label="Play / Pause Birthday Music">
+              <span class="play-icon" id="bigPlayIcon">▶</span>
+            </button>
+          </div>
+
+          <!-- Progress Bar Scrubber -->
+          <div class="progress-bar-container" id="progressBarContainer">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-thumb" id="progressThumb"></div>
+          </div>
+
+          <!-- Time Display -->
+          <div class="time-display-row">
+            <span class="time-elapsed" id="timeElapsed">0:00</span>
+            <span class="time-total" id="timeTotal">4:12</span>
+          </div>
+
+          <!-- Equalizer Animation Bars -->
+          <div class="equalizer-bars" id="equalizerBars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Romantic Quote Card -->
+      <div class="surprise-quote-card">
+        <p class="romantic-heart-quote">
+          "May your heart always be as happy as you make mine. ♡"
+        </p>
+      </div>
+
+      <!-- Interactive Celebration Buttons -->
+      <div class="celebration-actions-row">
+        <button class="celebrate-btn-main" id="celebrateBtn">
+          <span class="btn-emoji">🎉</span>
+          <span>Pop Fireworks & Confetti!</span>
+        </button>
+
+        <button class="send-love-main" id="sendLoveBtn">
+          <span class="btn-emoji">💖</span>
+          <span>Send Infinite Love</span>
+          <span class="badge-count" id="loveCount">0 ❤️</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copy">
+        Made with <span class="footer-heart">💖</span> for my special one <strong>Susu Baba</strong>
+      </p>
+      <div class="footer-meta">
+        <span>Today and Always</span>
+        <div class="footer-social-icons">
+          <span title="Instagram">📷</span>
+          <span title="Facebook">📘</span>
+          <span title="Love">❤️</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= GRAND INTRO BIRTHDAY WISH POPUP MODAL ================= -->
+  <div class="intro-wish-modal active" id="introWishModal">
+    <div class="intro-modal-backdrop" id="introBackdrop"></div>
+
+    <div class="intro-wish-dialog">
+      <!-- Decorative Floating Sparkles -->
+      <div class="intro-floating-sparkle sp1">✨</div>
+      <div class="intro-floating-sparkle sp2">🎈</div>
+      <div class="intro-floating-sparkle sp3">💖</div>
+      <div class="intro-floating-sparkle sp4">🎂</div>
+
+      <button class="intro-close-btn" id="introCloseBtn" aria-label="Close & Enter Main Page">&times;</button>
+
+      <div class="intro-wish-card-inner">
+        <div class="wax-seal">👑</div>
+
+        <div class="intro-celebration-badge">
+          <span class="pulse-dot"></span>
+          <span>🎂 Today is Susu Baba's 24th Birthday 🎂</span>
+        </div>
+
+        <div class="intro-music-status-bar" id="introMusicStatus" title="Click to play / pause Happy Birthday Song">
+          <span class="music-icon-anim">🎵</span>
+          <span id="introMusicText">Playing Happy Birthday Song for Susu Baba ♡</span>
+        </div>
+
+        <h2 class="intro-wish-title">Happy Birthday My Love!</h2>
+
+        <p class="intro-card-body">
+          Today is a celebration of you! A day to remind you how special, kind, beautiful and amazing you are to me.
+        </p>
+        <p class="intro-card-body">
+          May this year bring you more happiness, more love, more success and everything your gentle heart desires.
+          You deserve all the good things in the world! ♡
+        </p>
+
+        <div class="intro-sinhala-letter-box">
+          <p class="intro-sinhala-text">
+            මගේ චූටි බූටි ආදරී 💕<br><br>
+            ඔයා දැන් ලොකු බබෙක්🥺 අවුරුදු 24 ක් දැන් ඔයාට අඩ්ඩෙ 🤩 ඉතින් දැන් මම ඔයා එක්ක ගොඩක් කල් අපි එකට සමරන
+            පලවෙනි birthday එක මේක නිකන් දවසක් නෙවෙයි මගේ කුමාරිකාව මේ ලෝකෙට ආව දවස තමා අද ❤️‍🔥<br><br>
+            අවුරුදු ගාණක් ඉදන් මගේ ලග ඉන්න ඔයා මාව වැඩියෙන්ම තේරුන් ගත්ත කෙනා ඔයා ඔයා මට ලෝකයක් කොච්චර මරගත්තත්
+            කියවගත්තත් ඒ හැමදේම පොඩි වෙලාවයි ඒ හැමදේම ආදරේ නිසා (මට ඇති ගෑනියෙක් නෑ යකෝ එහෙනම් මම ඔහොම මරාගන්නවද
+            යකෝ🥺) මගෙ එක්ක හැමදේටම ඉන්න මගේ ශක්ති පැකට් එක ඔයා කොච්චර මහන්සි වෙලා ආවත් ඔයා ගාවට ආවම හැමදේම හරි💎<br><br>
+            මම දන්නෙ මෙච්චරයි මගේ ලෝකේ ඔයා. ඔයා වගේ කෙල්ලෙක් මේ ලෝකො කොහෙවත් නෑ ඔයා වගේ ආදරේ කරන්න මාව බලාගන්න කාටවත්
+            බෑ ඔයාට මම ගොඩම ගොඩාආආආක් ආදරෙයි මගේ පණ❤️💕<br><br>
+            මැරෙනකන් අපි එකටම ඉමු ගහගෙන මරාගෙන හරි මගේ එක්කම ඉන්න ඔයා මගේ විතරයි ආදරෙයි ගොඩම ගොඩාආආක්❤️💕❤️‍🔥🫀
+          </p>
+        </div>
+
+        <div class="intro-modal-actions">
+          <button class="btn-enter-main-page" id="btnEnterMainPage">
+            <span class="btn-icon">💖</span>
+            <span>Enter Main Page & Explore Our World ➔</span>
+            <span class="btn-icon">✨</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PLAYFUL SURPRISE MODAL ================= -->
+  <div class="surprise-interactive-modal" id="surpriseInteractiveModal">
+    <div class="modal-backdrop-blur" id="modalBackdrop"></div>
+
+    <div class="surprise-dialog-box" id="surpriseDialogBox">
+      <button class="modal-dismiss-btn" id="modalDismissBtn" aria-label="Close modal">&times;</button>
+
+      <!-- STEP 1: Do You Love Me? -->
+      <div class="modal-step active" id="modalStep1">
+        <div class="modal-emoji-header animate-bounce">💖🥺</div>
+        <h3 class="modal-question-title">Do You Love Me?</h3>
+        <p class="modal-sub-prompt">Answer honestly, no cheating! 🙈</p>
+
+        <div class="modal-actions-area" id="actionsArea1">
+          <button class="btn-modal-yes" id="loveYesBtn">
+            <span>Yes, Of Course! 💖</span>
+          </button>
+          <button class="btn-modal-no" id="loveNoBtn">
+            <span>No 💔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 2: බබෙක් හදමුද? -->
+      <div class="modal-step" id="modalStep2">
+        <div class="modal-emoji-header animate-bounce">👶🍼</div>
+        <h3 class="modal-question-title sinhala-title">බබෙක් හදමුද?</h3>
+        <p class="modal-sub-prompt">හිතලා බලලා උත්තර දෙන්නකෝ... 🙈💖</p>
+
+        <div class="modal-actions-area" id="actionsArea2">
+          <button class="btn-modal-yes" id="babyYesBtn">
+            <span>Yes 🥰</span>
+          </button>
+          <button class="btn-modal-no" id="babyNoBtn">
+            <span>No 🙈</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Dancing Baby Video & "පකයා ප්‍රේමරත්න" -->
+      <div class="modal-step" id="modalStep3">
+        <div class="modal-celebrate-header">🎉🕺💃🎉</div>
+        <h3 class="modal-question-title victory-title">Yayyy! She Said YES! 🍼🎉</h3>
+
+        <div class="baby-video-container">
+          <video id="babyDancingVideo" autoplay loop playsinline muted controls>
+            <source src="assets/images/baby_dance_new.mp4" type="video/mp4">
+            <source src="assets/images/Baby%20Dance%20new.mp4" type="video/mp4">
+            <source src="assets/dancing_baby.mp4" type="video/mp4">
+          </video>
+          <img src="assets/baby_dance.gif" alt="Dancing Baby" id="babyDancingGif" class="baby-gif-fallback"
+            style="display: none;">
+        </div>
+
+        <div class="funny-caption-box">
+          <h2 class="funny-caption-text">පකයා ප්‍රේමරත්න</h2>
+          <p class="funny-sub-text">Happy Birthday My Forever Love! ❤️👶</p>
+        </div>
+
+        <div class="modal-finish-actions">
+          <button class="btn-modal-finish" id="modalFinishBtn">
+            <span>🎂 Continue to Birthday Cake & Wishes 🎂</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PHOTO LIGHTBOX MODAL ================= -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">&times;</button>
+      <img src="" alt="Enlarged photo" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
